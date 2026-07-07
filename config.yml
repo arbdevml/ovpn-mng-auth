@@ -1,0 +1,4 @@
+auth_url: 'ovpn-auth.internal.loc'
+auth_token: 'token'
+ovpn_mng_ip: '127.0.0.1'
+ovpn_mng_port: '8080'
