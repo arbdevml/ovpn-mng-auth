@@ -1,6 +1,9 @@
-# ovpn-mng-auth
+# OpenVPN Authentication Gateway via Management Interface.
 Gateway intercepts OpenVPN Management Interface authentication requests, forwards credentials to an external REST API and returns the response. Authentication logic stays outside the VPN server, enabling any backend (OTP both static and dynamic challenge) to be used.
 The tool keeps authentication logic completely separate from the VPN server, enabling any backend language or framework to handle user validation.
+
+# Install
+`pip install requests PyYAML`
 
 **Key Features of the Script**
 - **Management Interface client** – opens a TCP socket to the address/port defined in `config.yml` and communicates with OpenVPN using the Management Protocol.  
